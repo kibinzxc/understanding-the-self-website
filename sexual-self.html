@@ -8,30 +8,93 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="physical-self.css">
+    <link rel="stylesheet" href="sexual-self.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
      <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-     
+    
   </head>
-  <body>
+
+  <style>
+    .line {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .line span {
+        flex-grow: 1;
+        border-bottom: 5px solid black;
+    }
+
+    .line h1 {
+        margin: 0 20px;
+    }
+
+    .political {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 50vh;
+      object-fit: none;
+    background-position: center;
+
+    }
+
+    .word {
+      font-family: Poppins;
+      font-size: 54px;
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 900;
+      color: white;
+      -webkit-text-stroke-color: black;
+      -webkit-text-stroke-width: 3.00px; 
+    }
+    figcaption{
+       float:right;
+    }
+    body{
+        line-height: 2;
+    }
+        a:link {
+        text-decoration: none;
+        }
+
+        a:visited {
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: none;
+        }
+
+        a:active {
+        text-decoration: none;
+        }
+    
+</style>
+
+  <body style="background:#FFF">
 
 
    <!--  -->
 
     <header>
       
-      <a href="#home" class="brand">Understanding The Self | BSIT - 2C</a>
+      <a href="index1.html" class="brand">Understanding The Self | BSIT - 2C</a>
       <div class="menu-btn"></div>
       <div class="navigation">
         <div class="navigation-items">
 
-          <a href="#aboutus">Physical Self</a>
-          <a href="#IIT/NIT">Sexual Self</a>
+          <a href="physical-self.html">Physical Self</a>
+          <a href="sexual-self.html">Sexual Self</a>
           <a href="#exam">Material Self</a>
-          <a href="sign-up.html">Spiritual Self</a>
-          <a href="contactus.html">Digital Self</a>
-          <a href="contactus.html">Political Self</a>
+          <a href="religion.html">Spiritual Self</a>
+          <a href="#">Digital Self</a>
+          <a href="political.html">Political Self</a>
 
           <!-- <div class="mode"> -->
     
@@ -43,134 +106,62 @@
         <div class="banner">
         <div class="banner-title">
             <h1 class="second-h1">Unpacking The Self:</h1>
-            <h1 >The Physical Self</h1>
+            <h1 >The Sexual Self</h1>
         </div>
         </div>
     </section>
-    <section class="definition-box">
-        <div class="uts-definition">
-            <div class="text-box">
-                <div class="title">
-
-                    <h2>Understanding The Self</h2>
-                </div>
-                
-                <div class="description">
-                    Having insight into one's own behavior, attitudes, strengths, and weakness. It is the individual's ability to say and know what he or she is good at or needs improvement
-                </div>
-            </div>
-
-
-            <div class="img-box">
-                <img alt="2" src="uts-photo.jpg"  class="img-responsive">
-            </div>
+    
+    <div style="padding: 60px 150px 60px 150px; text-align: justify;">
+        <div class="line">
+          <span></span>
+          <h1><center>Sexual Self</center></h1>
+          <span></span>
         </div>
-        <div class="physical-definition" >
-            <div class="text-box">
-                <div class="title">
-                    <h2>Physical Self</h2>
-                </div>
-                
-                <div class="description">
-                    The concrete dimensions of the body, it is the  tangible aspect of the person which can be directly observed and examined
-                </div>
-            </div>
-            <div class="img-box">
-                <img alt="2" src="second-photo.jpg"  class="img-responsive">
-            </div>
-        </div>
-    </section>
-
-    <section class="qoutes">
-        
-        <div class="box-q" >
-            <div class="text-boxq">
-                <div class="titleq">
-                    <h2>Erik Erikson</h2>
-                </div>
-                
-                <div class="description">
-                    For Erik Erikson, experience is anchored in the ground-plan of body (Erikson, 1963). According to him the role of bodily organs is especially important in early developmental stages of a persons life.
-                </div>
-            </div>
-            <div class="img-boxq">
-                <img alt="2" src="erik.png"  class="img-responsive">
-            </div>
-        </div>
-
-        <div class="box-q" >
-            <div class="text-boxq">
-                <div class="titleq">
-                    <h2>Williams James</h2>
-                </div>
-                
-                <div class="description">
-                    Having insight into one's own behavior, attitudes, strengths, and weakness. It is the individual's ability to say and know what he or she is good at or needs improvement
-                </div>
-            </div>
-            <div class="img-boxq">
-                <img alt="2" src="williams.jpg"  class="img-responsive">
-            </div>
-        </div>
-
-        <div class="box-q" >
-            <div class="text-boxq">
-                <div class="titleq">
-                    <h2>Sigmund Freud</h2>
-                </div>
-                
-                <div class="description">
-                    In Psychoanalytical school, Sigmund Freud's construction of self and personality makes the physical body the core of human experience. Freud was of the view that the ego is first and foremost a body ego (Freud, 1937).
-                </div>
-            </div>
-            <div class="img-boxq">
-                <img alt="2" src="freud.png"  class="img-responsive">
-            </div>
-        </div>
-
-
-    </section>
-
-    <section id="animated-section" class="fade-in">
-        <div style="padding: 60px 100px 60px 100px; text-align: justify;">
-            <div class="line">
-              <span></span>
-              <h1><center>Factors or Aspects that Describe the Political Self</center></h1>
-              <span></span>
-            </div>
-            <p style="font-size: 22px;">The political self can be described by various factors that shape an individual's political beliefs, attitudes, and behaviors. Here are some key factors that contribute to the formation of the political self:</p>
-            <ul style="font-size: 22px; margin-left: 30px;">
-              <li style="margin-bottom: 5px;">A <b>political ideology</b> is a set of ideas, beliefs, values, and opinions, exhibiting a recurring pattern, 
-          that competes deliberately as well as unintentionally over providing plans of action for public policy making in
-          an attempt to justify, explain, contest, or change the social and political arrangements and processes of a 
-          political community. The concept of ideology is subject to partly incompatible conceptual interpretations.</li>
-              <li style="margin-bottom: 5px;"><b>Socioeconomic status</b> is the position of an individual or group on the socioeconomic scale, which is determined
-          by a combination of social and economic factors such as income, amount and kind of education, type and prestige
-          of occupation, place of residence, and—in some societies or parts of society—ethnic origin or religious background.
-          Examinations of socioeconomic status often reveal inequities in access to resources, as well as issues related to
-          privilege, power, and control.</li>
-              <li style="margin-bottom: 5px;"><b>Cultural and Identity Factors:</b> Cultural and identity factors, including ethnicity, religion, race, gender, and 
-          sexual orientation, play a significant role in shaping the political self. People with different cultural backgrounds
-          may have distinct political perspectives and priorities. Identity politics often influence issues such as civil rights,
-          social justice, and representation.</li>
-              <li style="margin-bottom: 5px;"><b>Political socialization</b> is a particular type of political learning whereby people develop the attitudes, values, beliefs, opinions, and behaviors that are conducive to becoming good citizens in their country. Socialization is largely a one-way process through which young people gain an understanding of the political world through their interaction with adults and the media.<br>(Greenstein, 1969)</li>
-              <li style="margin-bottom: 5px;"><b>Life Experiences:</b> Personal experiences, such as exposure to discrimination, economic hardships, international travel, or personal encounters with government institutions, can shape one's political self. Traumatic events, political activism, or involvement in social movements can also influence political beliefs and activism.</li>
-              <li style="margin-bottom: 5px;"><b>Media and Information Sources:</b> The media and information sources individuals consume can significantly impact their political self. Biases and perspectives presented in news outlets, social media, and online platforms can shape attitudes and opinions on political issues.</li>
-              <li style="margin-bottom: 5px;"><b>Rationality and Cognitive Processes:</b> Cognitive processes, including reasoning, critical thinking, and problem-solving abilities, influence the formation of political beliefs. Individuals may weigh different arguments and evidence to form their political opinions, often aligning with their existing values and biases.</li>
-              <li style="margin-bottom: 5px;"><b>Political Environment and Context:</b> The political environment and context in which individuals live can shape their political self. Factors such as the structure of government, political institutions, and the prevailing political climate can influence attitudes towards democracy, political participation, and trust in political leaders.</li>
-            </ul>
-            <p style="font-size: 22px;">It's important to note that these factors are interconnected and can vary across individuals and societies. The political self is a complex and multifaceted construct, influenced by a combination of these factors and 
-          others not mentioned here.</p>
-            <p style="font-size: 16px;">References:</p>
-            <a href="https://www.sciencedirect.com/topics/psychology/political-ideology" target="_blank">M. Freeden, in International Encyclopedia of the Social & Behavioral Sciences, 2001
-            https://www.sciencedirect.com/topics/psychology/political-ideology</a><br>
-            <a href="https://open.lib.umn.edu/americangovernment/chapter/6-2-political-socialization/" target="_blank">American Government and Politics in the Information Age 6.2 Political Socialization 
-            https://open.lib.umn.edu/americangovernment/chapter/6-2-political-socialization/</a>
+          <p style="font-size: 22px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+            <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+          </svg> This chapter will discuss the <b>concept of sexual self. </b>It highlights biological and environmental factors that shape sexual development. 
+          It will provide you with suggestions on how to begin the process of redefining your sexual self.</p>
+        <center>
+            <img src="img/pic1.png" alt="" style="width: 50%; height: 50%; object-fit: cover; margin-top: 20px;">
+        </center>
           </div>
+    <!--Question 2-->
+    <div style="padding: 20px 150px 60px 150px; text-align: justify;">
+     
+     
+    <h1 style="font-weight:bold;">What is Sexual Self?</h1></br>
+
+    </br>
+    <p style="font-size: 22px;text-indent: 100px;"> Sexual self refers to <i>how one thinks about themself as 
+      a sexual individual.</i> It speaks of your sexual health, sexual orientation, gender identity, 
+      and expression and values around your sexuality. The <b>sexuality or sex</b> of a person is classified as <i>male, female or intersex.</i>
+        A person typically has their sex assigned at birth based on physiological characteristics including 
+        their genitalia and chromosome compositions. <b>Gender</b> is a term that refers to social or cultural 
+        distinctions associated with a given sex. <b>Gender identity</b> is what is inside us; how we feel about
+         our own gender. <b>Sexuality</b> is about who you are attracted to, sexually or romantically. 
+         This is also called your <i>sexual orientation</i>  where one’s physical attraction and emotional 
+         attraction overlap.</p><br>
+         <blockquote class="blockquote" style="border-left: 5px solid orange ;">
+         <p style="font-size: 22px;">
+          In the present study, factors affecting sexual self-concept were categorized to the following:
+          <ul style="font-size: 22px; ">
+            <li><i>Biological Factors</i></li>
+            <li><i>Psychological Factors</i></li>
+            <li><i>Social Factors</i></li>
+          </ul>
+        </blockquote>
+        </p><br><br>
+
+        <h1 style="font-weight:bold;">Biological Factor</h1></br>
+      
+
+       
+    </div>
+</body>
+</html>
           
           
-          
-    </section>
+   
 
     <script>
     function isElementInViewport(element) {
