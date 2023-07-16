@@ -1,0 +1,226 @@
+.banner-box {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100vw;
+    height: 40vh;
+    padding: 0;
+    background-color: rgb(255, 255, 220);
+    background-image: url('banner-pic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fade-in 1s ease-in forwards; /* Animation for fade-in effect */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; /* Apply Poppins font */
+    font-weight: 700;
+    font-size: 700%;
+ 
+}
+.second-h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; /* Apply Poppins font */
+    font-weight: 700;
+    font-size: 700%;
+    -webkit-text-stroke: 3px black; /* Black outline */
+    -webkit-text-fill-color: transparent; /* Hollow text */
+}
+
+.banner-title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px; /* Adjust this value to move the title higher */
+}
+
+.definition-box{
+   
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 25vh;
+    margin-top: 15px;
+
+}
+
+.uts-definition {
+    border: solid 2px black;
+    width: 45%;
+    height: 22vh;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    animation: slide-up 1s ease-out; /* Animation for slide-up effect */
+    transition: transform 0.3s ease-out; /* Transition for smooth scaling */
+}
+
+.uts-definition:hover {
+    transform: scale(1.05); /* Scale up the div on hover */
+    background-color: rgb(255, 255, 220);
+}
+
+.physical-definition {
+    border: solid 2px black;
+    width: 45%;
+    height: 22vh;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    animation: slide-up 1s ease-out; /* Animation for slide-up effect */
+    transition: transform 0.3s ease-out; /* Transition for smooth scaling */
+}
+
+.physical-definition:hover {
+    transform: scale(1.05); /* Scale up the div on hover */
+    background-color: rgb(255, 255, 220);
+}
+
+/* Slide-up animation keyframes */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.img-box{
+    border: solid 1px black; 
+    width: 35%;
+    height: 20vh;
+    margin: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+.img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.text-box{
+ 
+    width: 60%;
+    height: 20vh;
+    margin: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title{
+
+    width: 100%;
+    height: 5vh;
+}
+
+.title h2{
+    margin: 0;
+    padding: 0;
+    font-weight: bold; 
+}
+
+.description{
+    
+    width: 85%;
+    height: 12vh;
+}
+
+.qoutes{
+
+    display: flex;
+    
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 25vh;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.box-q {
+    border: solid 1px black;
+    width: 30%;
+    height: 22vh;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    animation: scale-in 1s ease-out; /* Animation for pop-up effect */
+    transition: transform 0.3s ease-out; /* Transition for smooth scaling */
+    
+}
+
+.box-q:hover {
+    transform: scale(1.05); /* Scale up the div on hover */
+    background-color: rgb(255, 255, 220);
+}
+
+.img-boxq {
+    border: solid 1px black; 
+    width: 40%;
+    height: 20vh;
+    border-radius: 10px;
+    margin: 8px;
+    box-sizing: border-box; /* Add this line to include borders and padding in the element's total width and height */
+    background-color: white;
+}
+
+
+
+.img-boxq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use 'cover' instead of 'contain' for the image to cover the entire container */
+    border-radius: 10px; /* Apply the border-radius directly to the image if needed */
+}
+.text-boxq{
+    width: 60%;
+    height: 16vh;
+    margin: 8px;
+    margin-left: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titleq h2{
+    margin: 0;
+    padding: 0;
+    font-weight: bold; 
+}
+
