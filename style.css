@@ -112,12 +112,14 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a:before{
   content: '';
   position: absolute;
-  background: #fff;
+  color:yellow;
+  background: yellow;
   width: 0;
   height: 3px;
   bottom: 0;
   left: 0;
   transition: 0.3s ease;
+
 }
 
 header .navigation .navigation-items a:hover:before{
@@ -176,6 +178,13 @@ section{
 .home .content h1 span{
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.header1{
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing:5px;
+  font-style:italic;
 }
 
 .home .content p{
@@ -251,7 +260,7 @@ section{
 }
 
 .slider-navigation .nav-btn.active{
-  background: red;
+  background: orange;
 }
 
 .slider-navigation .nav-btn:not(:last-child){
@@ -711,7 +720,8 @@ section{
 .c:hover{ transform:scale(1.2); }
 .d:hover{ transform:scale(1.2);}
 
-#mid{ padding-left:450px; margin-top:20px; padding-right:350px}
+
+#mid{ padding-left:500px; margin-top:20px; padding-right:350px}
 a{
   text-decoration:none;
 }

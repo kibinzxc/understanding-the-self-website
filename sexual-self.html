@@ -202,86 +202,90 @@
 
 </script>
 
-    <script>
+<script>
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  const h1Elements = document.querySelectorAll('.banner h1');
-  const texts = Array.from(h1Elements).map(h1 => h1.innerText);
-  h1Elements.forEach(h1 => h1.innerText = '');
-
-  let currentIndex = 0;
-  let index = 0;
-  let typingEffect = setInterval(() => {
-    const h1Element = h1Elements[currentIndex];
-    const text = texts[currentIndex];
-
-    // Typing effect
-    if (index <= text.length) {
-      h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
-      index++;
-    }
-
-    // Erasing effect
-    else if (index > text.length && index <= text.length * 2) {
-   
-      h1Element.innerHTML = text.substring(0, text.length * 2 - index) + '<span class="blinking-bar">|</span>';
-      index++;
-
-    }
-
-    // Proceeding to the next <h1> element
-    else {
-      clearInterval(typingEffect);
-      currentIndex++;
-
-      if (currentIndex < h1Elements.length) {
-        index = 0;
-        // Pause before typing the next <h1> element
-        setTimeout(() => {
-          typingEffect = setInterval(() => {
-            const h1Element = h1Elements[currentIndex];
-            const text = texts[currentIndex];
-            h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
-            index++;
-            if (index > text.length) {
-              clearInterval(typingEffect);
-              h1Element.innerHTML = text;
-              currentIndex++;
-              if (currentIndex < h1Elements.length) {
-                // Blink effect before typing the next <h1> element
-                setTimeout(() => {
-                  index = 0;
-                  let blinkCount = 0;
-                  typingEffect = setInterval(() => {
-                    const h1Element = h1Elements[currentIndex];
-                    const text = texts[currentIndex];
-                    if (blinkCount < 2) {
-                      h1Element.innerHTML = text.substring(0, text.length) + '<span class="blinking-bar">|</span>';
-                      blinkCount++;
-                    } else {
-                      h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
-                      index++;
-                      if (index > text.length) {
-                        clearInterval(typingEffect);
-                        h1Element.innerHTML = text;
-                      }
-                    }
-                  }, 100);
-                }, 1000);
-              }
-            }
-            
-          }, 100);
-        }, 0); // Adjust the delay as needed (in milliseconds)
-      }
-    }
-  }, 100);
-});
-
-
-        </script>
-
-
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const h1Elements = document.querySelectorAll('.banner h1');
+      const texts = Array.from(h1Elements).map(h1 => h1.innerText);
+      h1Elements.forEach(h1 => h1.innerText = '');
     
-    </body>
-    </html>
+      let currentIndex = 0;
+      let index = 0;
+      let typingEffect = setInterval(() => {
+        const h1Element = h1Elements[currentIndex];
+        const text = texts[currentIndex];
+    
+        // Typing effect
+        if (index <= text.length) {
+          h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
+          index++;
+        }
+    
+        // Erasing effect
+        else if (index > text.length && index <= text.length * 2) {
+       
+          h1Element.innerHTML = text.substring(0, text.length * 2 - index );
+            index++;
+            
+    
+        }
+    
+        // Proceeding to the next <h1> element
+        else {
+        
+          clearInterval(typingEffect);
+            
+          currentIndex++;
+          
+    
+          if (currentIndex < h1Elements.length) {
+            index = 0;
+            // Pause before typing the next <h1> element
+            setTimeout(() => {
+              typingEffect = setInterval(() => {
+                const h1Element = h1Elements[currentIndex];
+                const text = texts[currentIndex];
+                h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
+                index++;
+                if (index > text.length) {
+                  clearInterval(typingEffect);
+                  h1Element.innerHTML = text;
+                  currentIndex++;
+                  if (currentIndex > h1Elements.length) {
+                    // Blink effect before typing the next <h1> element
+                    setTimeout(() => {
+                      index = 0;
+                      let blinkCount = 0;
+                      typingEffect = setInterval(() => {
+                        const h1Element = h1Elements[currentIndex];
+                        const text = texts[currentIndex];
+                        if (blinkCount < 2) {
+                          h1Element.innerHTML = text.substring(0, text.length) + '<span class="blinking-bar"></span>';
+                          blinkCount++;
+                        } else {
+                          h1Element.innerHTML = text.substring(0, index) + '<span class="blinking-bar">|</span>';
+                          index++;
+                          if (index > text.length) {
+                            clearInterval(typingEffect);
+                            h1Element.innerHTML = text;
+                          }
+                        }
+                      }, 100);
+                    }, 1000);
+                  }
+                }
+                
+              }, 100);
+            }, 100); // Adjust the delay as needed (in milliseconds)
+          }
+        }
+      }, 100);
+    });
+    
+    
+            </script>
+    
+    
+        
+        </body>
+        </html>
