@@ -232,4 +232,9 @@
     padding: 0;
     font-weight: bold; 
 }
+.footer{
+    background: rgba(1, 1, 1, 0.5);
+    user-select: none;
+    padding: 3em;
+  }
 
