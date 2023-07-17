@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informative Approach</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+     
+  </head>
+  <body>
+
+
+   <!--  -->
+
+    <header>
+      
+      <a href="index1.html" class="brand">Understanding The Self | BSIT - 2C</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+
+          <a href="physical-self.html">Physical Self</a>
+          <a href="sexual-self.html">Sexual Self</a>
+          <a href="material-self.html">Material Self</a>
+          <a href="religion.html">Spiritual Self</a>
+          <a href="digitalSelf.html">Digital Self</a>
+          <a href="political.html">Political Self</a>
+
+          <!-- <div class="mode"> -->
+    <!-- </div> -->
+        </div>
+      </div>
+    </header>
+    <style>
+      .word {
+          font-family: Poppins;
+          font-size: 70px;
+          position: absolute;
+          top: 42%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: 900;
+          color: white;
+          -webkit-text-stroke-color: black;
+          -webkit-text-stroke-width: 4.00px; 
+        }
+    </style>
+    <script>
+      var words = ['Understanding the self','Digital Self'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+    </script>
+
+    <div style="width:100%;height:75vh;float:right;object-fit: none;">
+      <img src="digitalSelfimages/banner.png" style="height: 75vh;width:100%;">
+      <center><div class="word"></div></center>
+    </div>
+
+    <div style="padding-left: 40px;padding-right: 40px;">
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-top:25px;margin-bottom:20px;padding:25px;background-color: rgba(0,0,0,0.2);margin-right: 10px;float:left;">
+          <p style="font-size: 50px;font-weight: bold;color:black;text-align:center">DIGITAL SELF</p>
+          <p style="font-size: 20px;color:black;">-It is the persona you use when you’re online. Some people maintain one or more online identifies that are distinct from their “real world” selves.
+          -Self in the Age of Technology<br><br>
+          -a mask that we put on to engage the technological world.</p>
+        </div>
+            
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-top:25px;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:right;padding-bottom: 5.50%;padding-top:5.50%;padding-left: 25px;padding-right: 25px;">
+          <p style="font-size: 50px;font-weight: bold;color:black;text-align:center">ASPECTS THAT DESCRIBE THE DIGITAL SELF</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">Zhao (2005) discusses digital self-construction and emphasizes the role of online interactions. She argues that the digital self is formed without the influence of non-verbal feedback and traditional environmental factors. The existence of a “digital self” does not mean that the self is divided into physical and digital parts, but the emphasis is on the “E-Audience”. This “E-Audience” witnesses us on the ‘Front stage’ of the internet, like in the form of social media profiles, when we post and interact (Zhao, 2005).</p>
+        </div>
+        
+        <div style="background-color: rgba(0,0,0,0.2);display: inline-flex;width:49.5%;border-radius: 5px;border: 2px solid black;float:left;">
+          <div>
+              <p style="font-size: 25px;color:black;padding-top:20px;text-align: center;font-weight: bold;">Donald Winnicot</p>
+              <p style="font-size: 20px;color:black;padding-left:25px;padding-right:25px;padding-bottom:25px;text-align: justify;">Physician and psychoanalyst Donald Winnicot once proposed a theory of self which posited there is a "true self" that is the instinctive core of our personality and must be nurtured and realized. </p>
+          </div>
+          <img src="digitalSelfimages/Donald_Winnicott.jpg" style="width:25%;border-radius: 5px;">
+        </div>   
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+            <p style="font-size: 50px;font-weight: bold;color:black;text-align:center">HOW DO YOU BUILD YOUR IDENTITY ONLINE ?</p>
+            <p style="font-size: 20px;color:black;text-align: justify;">Every websites that you interact with will collect its own version of who you are, based on the information that you have shared.</p>
+            <p style="font-size: 20px;color:black;text-align: justify;">It is up to you how you will represent yourself  online its either  you will represent yourself closely as who you are and what you do in real life or you will represent yourself far from real life.</p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 10px double black;margin-bottom:20px;background-color: rgba(0,0,0,.2);float:left;padding: 25px;">
+          <p style="font-size: 75px;font-weight: bold;font-family: 'Courier New', Courier, monospace;color:black;text-align:center">SELF AND OTHER CYBERSPACE</p>
+        </div> 
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">1. CYBERSPACE</p>
+          <center><img src="digitalSelfimages/3.jpg" style="border-radius: 5px;width: 100%;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">Refers to the virtual computer world, and more specifically, an electronic medium that is used to facilitate online communication.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-left: 10px;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">2. DIGITAL LITERACY</p>
+          <center><img src="digitalSelfimages/4.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">Having the skills you need to live, to learn and work in a society where the communication and access to information.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:right;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">3. ONLINE DISINHIBITION </p>
+          <center><img src="digitalSelfimages/5.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">It is the lack of restraint one feels when communicating online in comparison to communicating in person. </p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 60px;font-weight: bold;font-family: 'Courier New', Courier, monospace;color:black;text-align:center">TWO CATEGORIES OF ONLINE DISINHIBITION</p>
+        </div> 
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;margin-right:13px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">1. BENIGN DISINHIBITION</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">We are more likely to open up and show our vulnerability and share our deepest fears. We help others and gladly donate to sites such as the Red Cross.</p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">2. TOXIC DISINHIBITION</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">When we can't see other people's faces, we are more likely to harass, abuse, and intimidate others. We give in to our darkest desires. We hurt people because it's easy. </p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 50px;font-weight: bold;font-family: 'Courier New', Courier, monospace;color:black;text-align:center">SELF PRESENTATION STRATEGIES AND IMPRESSION MANAGEMENT</p>
+          <p style="font-size: 20px;color:black;text-align: justify;"><strong>1. Self-Promotion</strong> - refers to the practice of purposefully trying to present oneself ast highly coompetent to other people.</p>
+          <p style="font-size: 20px;color:black;text-align: justify;"><strong>2. Ingratiation</strong>- refers to behaviors that a person illicitly enacts to make others like him or her or think well of his or her qualities as a person.</p>
+          <p style="font-size: 20px;color:black;text-align: justify;"><strong>3. Exemplification</strong>- is defined as strategic self presentational strategy whereby an individual attempts to project an image of integrity and moral <span style="margin-left: 212px;">worthiness</span>.</p>
+          <p style="font-size: 20px;color:black;text-align: justify;"><strong>4. Intimidation</strong>- is intentional behavior that would cause a person of ordinary sensibilities to fear injury or harm.</p>
+          <p style="font-size: 20px;color:black;text-align: justify;"><strong>5. Supplication</strong>- strategy for self-presentation that involves depicting oneself as weak, needy, or dependent so as to motivate others to provide assistance <span style="margin-left: 174px;">or care.</span></p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 10px double black;margin-bottom:20px;background-color: rgba(0,0,0,.2);float:left;padding: 25px;">
+          <p style="font-size: 60px;font-weight: bold;font-family: 'Courier New', Courier, monospace;color:black;text-align:center">POSITIVE AND NEGATIVE IMPACT OF SOCIAL MEDIA AND ONLINE INTERACTION ON THE SELF</p>
+        </div>       
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;margin-right:13px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">ADVANTAGES</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">- &nbsp Getting lots of likes and shares boosted my self-esteem.</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">- Social media sites inform and empower individuals to transform <span style="margin-left: 28px;">themselves and their communities</span> .</p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">DISADVANTAGES</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">- Low self-esteem due to risk of exposure to cyberbullying and <span style="margin-left: 28px;">cyberpornography.</span></p>
+          <p style="font-size: 20px;color:black;text-align: justify;">- &nbsp Extensive online activity correlates with personality and brain disorders. </p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;margin-left:405px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">BOUNDARIES OF THE SELF ONLINE</p>
+          <p style="font-size: 20px;color:black;text-align: justify;">1.	Stick to safer sites.<br>
+            2.	Guard your passwords.<br>
+            3.	Be choosy about online friends.<br>
+            4.	Remember that anything you put online or post on a site is there forever,<br>
+            5.	even if you try to delete it.<br>
+            6.	Don't be mean or embarrass other people online.<br>
+            7.	Limit what you share.
+          </p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 20px;color:black;text-align: justify;">The term "digital self" refers to the online representation or identity of an individual. It is the persona that people create and maintain in the digital realm through various online platforms, websites, and social media. This digital self is distinct from one's physical self, but it can have a significant impact on one's life, relationships, and reputation.</p>
+          <br>
+          <p style="font-size: 20px;color:black;text-align: justify;">The digital self can encompass a wide range of aspects, including:</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">  
+          <p style="font-size: 38px;font-weight: bold;color:black;text-align:center">1. SOCIAL MEDIA PROFILES</p>
+          <center><img src="digitalSelfimages/6.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;"> The collection of information and interactions an individual has on platforms like Facebook, Twitter, Instagram, LinkedIn, etc.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-left: 10px;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">2. ONLINE PRESENCE</p>
+          <center><img src="digitalSelfimages/7.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">Any content related to a person that can be found online, such as blog posts, articles, videos, comments, and reviews.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:right;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">3. VIRTUAL AVATARS </p>
+          <center><img src="digitalSelfimages/8.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;background-color: black;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">In the context of online games and vr, people often create avatars that represent them and reflecting their aspects of digital self. </p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">  
+          <p style="font-size: 38px;font-weight: bold;color:black;text-align:center">4. DIGITAL FOOTPRINT</p>
+          <center><img src="digitalSelfimages/9.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">The trail of data and information that individuals leave behind as they use the internet and interact with online services.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-left: 10px;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">5. ONLINE BEHAVIOR</p>
+          <center><img src="digitalSelfimages/10.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">The way people interact with others, express themselves, and present their opinions and beliefs on various online platforms.</p>
+        </div>
+        <div style="width:33%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:right;padding: 24.5px;">  
+          <p style="font-size: 40px;font-weight: bold;color:black;text-align:center">6. Privacy and Security </p>
+          <center><img src="digitalSelfimages/11.jpg" style="border-radius: 5px;width: 100%;height:228px;margin-bottom:20px;background-color: black;"></center>
+          <p style="font-size: 20px;color:black;text-align: justify;">The level of control individuals have over their personal information and how they safeguard their digital selves from potential risks.</p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">The digital self can bring both advantages and disadvantages. It enables global connections, idea sharing, and professional networking, but also entails risks like privacy concerns, online harassment, and permanent digital footprints. To navigate the digital world responsibly, individuals should be mindful of their online presence, exercise caution with shared information, utilize privacy settings, and consider the impact of their online actions. Being genuine online can foster more meaningful connections and interactions with others.
+            <br><br><br>
+            Life in the digital self refers to how individuals navigate and experience their existence through the lens of their online presence and interactions. In today's interconnected world, many aspects of our lives have become intertwined with the digital realm. Here are some key aspects of life in the digital self:
+          </p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">1. **Social Media and Relationships:** Social media platforms play a significant role in shaping our social lives. People use platforms like Facebook, Twitter, Instagram, and Snapchat to connect with friends, family, and acquaintances, share updates about their lives, and stay informed about others.
+            <br><br>
+            2. **Online Communication:** Digital self has revolutionized the way we communicate. Email, instant messaging, video calls, and social media messaging have become integral to both personal and professional interactions.
+            <br><br>
+            3. **Personal Branding and Identity:** The digital self allows individuals to create and curate their personal brand and identity. People often share specific aspects of their lives and interests to present themselves in a certain way to their online audience.
+            <br><br>
+            4. **Online Communities and Support Networks:** The internet has enabled the formation of online communities based on shared interests, hobbies, or experiences. These communities can provide support, encouragement, and a sense of belonging.
+            <br><br>
+            5. **E-commerce and Online Shopping:** Digital technology has transformed the way we shop and consume goods and services. Online shopping platforms have made it easier to make purchases from the comfort of one's home. 
+          </p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;height:776px;margin-left: 15px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">6. **Digital Entertainment and Media Consumption:** Streaming services, online gaming, and digital content platforms have become prevalent forms of entertainment, allowing people to consume media at their convenience.
+            <br><br>
+            7. **Remote Work and Education:** The digital self has also affected the way we work and learn. Remote work and online education have become more common, allowing people to connect and collaborate regardless of physical location.
+            <br><br>
+            8. **Privacy and Security Concerns:** As individuals lead much of their lives online, there are growing concerns about privacy and data security. People need to be vigilant about protecting their personal information and being aware of potential risks.
+            <br><br>
+            9. **Mental Health and Well-being:** The constant presence of the digital self can impact mental health. Online experiences, such as social media comparisons and cyberbullying, can influence self-esteem and overall well-being.
+            <br><br>
+            10. **Digital Legacy:** The digital self raises questions about one's digital legacy, the information and content that will remain after a person passes away.
+            </p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">
+            The concept of "self in digital" refers to how individuals perceive, represent, and express themselves within the context of the digital world. It encompasses the digital self as discussed earlier, but it also emphasizes the subjective and personal aspects of one's identity in the online space. Here are some key points to consider when exploring the self in digital:
+          </p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;height:776px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">1. **Identity and Representation:** In the digital realm, individuals can construct and shape their identity by choosing what to share and how to present themselves online. This representation may differ from their offline self, and people often curate their online presence to align with specific interests or goals.
+            <br><br>
+            2. **Multiple Digital Identities:** Many individuals maintain various digital identities across different platforms or online communities. Each identity may highlight different aspects of their personality or cater to specific social circles or interests.
+            <br><br>
+            3. **Anonymity and Pseudonymity:** Some online spaces allow users to remain anonymous or use pseudonyms, providing a level of privacy and freedom to express themselves without revealing their offline identity fully.
+            <br><br>
+            4. **Expression and Communication:** The digital environment enables various modes of expression, including text, digitalSelfimages, videos, and multimedia content. People can communicate through memes, GIFs, emojis, and other digital forms that enrich their online interactions.
+            <br><br>
+            5. **Social Interactions and Networks:** The self in digital heavily relies on social interactions with others. Online friendships, followers, and connections contribute to the formation of a person's digital identity and influence how they are perceived within the online community.
+          </p>
+        </div>
+        <div style="width:49.5%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;height:776px;margin-left: 15px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">6. **Digital Footprint:** All online activities contribute to a person's digital footprint, which is the trail of data they leave behind. This digital trail may affect how they are perceived by others and can have implications in both personal and professional contexts.
+            <br><br>
+            7. **Authenticity and Fakeness:** Balancing authenticity and the desire to present an idealized version of oneself is a common challenge in the digital world. Some individuals may struggle with being authentic, fearing judgment or negative consequences.
+            <br><br>
+            8. **Digital Citizenship:** Being a responsible digital citizen involves respecting others' rights, being mindful of the impact of one's online actions, and contributing positively to online communities.
+            <br><br>
+            9. **Impact on Mental Health:** Spending significant time in the digital space can impact mental health. Online interactions, social media comparisons, and cyberbullying are some factors that can affect an individual's emotional well-being.
+            <br><br>
+            10. **Digital Transformation:** Over time, the digital self may evolve as technology and online platforms change. Individuals may adapt their digital presence to align with emerging trends and communication methods.
+            </p>
+        </div>
+        <div style="width:100%;border-radius: 5px;border: 2px solid black;margin-bottom:20px;background-color: rgba(0,0,0,0.2);float:left;padding: 25px;">
+          <p style="font-size: 20px;color:black;text-align: justify;">References:<br> https://www.studocu.com/ph/document/university-of-san-agustin/filipino-sa-ibat-ibang-disiplina/digital-aspect-of-the-self/10983375 https://blogs.ed.ac.uk/keywordsindigitalsociology/2020/01/09/the-digital-self/#:~:text=The%20existence%20of%20a%20%E2%80%9Cdigital,interact%2</p>
+        </div>
+      </div>
+  </body>
+</html>
