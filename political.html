@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informative Approach</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <style>
+        .line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .line span {
+            flex-grow: 1;
+            border-bottom: 5px solid black;
+        }
+
+        .line h1 {
+            margin: 0 20px;
+        }
+
+        .political {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 50vh;
+          object-fit: none;
+          object-position: 0 50%;
+        }
+
+        .word {
+          font-family: Poppins;
+          font-size: 54px;
+          position: absolute;
+          top: 32%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: 900;
+          color: white;
+          -webkit-text-stroke-color: black;
+          -webkit-text-stroke-width: 3.00px; 
+        }
+    </style>
+  </head>
+  <body>
+
+
+   <!--  -->
+
+    <header>
+      
+      <a href="#home" class="brand">Understanding The Self | BSIT - 2C</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+
+          <a href="#aboutus">Physical Self</a>
+          <a href="#IIT/NIT">Sexual Self</a>
+          <a href="#exam">Material Self</a>
+          <a href="sign-up.html">Spiritual Self</a>
+          <a href="contactus.html">Digital Self</a>
+          <a href="contactus.html">Political Self</a>
+
+          <!-- <div class="mode"> -->
+       <a style="color:#00fa7b">Dark:</a>           
+       <span class="change">OFF</span>
+    <!-- </div> -->
+        </div>
+      </div>
+    </header>
+    <img src="political.jpeg" class="political">
+    <div class="word"></div>
+    <div style="padding: 60px 100px 60px 100px; text-align: justify;">
+      <img src="politics.jpg" height="400px" style="float: right; margin-left: 20px;">
+      <p style="font-size: 22px;">The concept of <b>Political Self</b> refers to the understanding of oneself in relation to political ideologies, beliefs, and participation in political processes. It encompasses how individuals perceive and engage with political systems, structures, and issues.</p>
+      <p style="font-size: 22px;">The Political Self recognizes that political beliefs and values are an integral part of one's identity and can shape various aspects of an individual's life. It involves self-reflection and awareness of one's political views, motivations, and the underlying factors that contribute to those perspectives.</p>
+      <p style="font-size: 22px;">Understanding the Political Self involves examining one's personal beliefs and their alignment with broader political ideologies, such as liberalism, conservatism, socialism, or nationalism. It entails critically analyzing and evaluating one's own political values, biases, and assumptions, as well as considering the impact of political systems on personal experiences and communities.</p>
+      <p style="font-size: 22px; margin-bottom: 20px;">Moreover, the Political Self acknowledges the interconnectedness between personal experiences and larger social and political contexts. It recognizes that individual identities are shaped by factors such as gender, race, class, and ethnicity, and how these intersect with political power dynamics and social inequalities.</p>
+      <div class="line">
+        <span></span>
+        <h1><center>Factors or Aspects that Describe the Political Self</center></h1>
+        <span></span>
+      </div>
+      <p style="font-size: 22px;">The political self can be described by various factors that shape an individual's political beliefs, attitudes, and behaviors. Here are some key factors that contribute to the formation of the political self:</p>
+      <ul style="font-size: 22px; margin-left: 30px;">
+        <li style="margin-bottom: 5px;">A <b>political ideology</b> is a set of ideas, beliefs, values, and opinions, exhibiting a recurring pattern, 
+    that competes deliberately as well as unintentionally over providing plans of action for public policy making in
+    an attempt to justify, explain, contest, or change the social and political arrangements and processes of a 
+    political community. The concept of ideology is subject to partly incompatible conceptual interpretations.</li>
+        <li style="margin-bottom: 5px;"><b>Socioeconomic status</b> is the position of an individual or group on the socioeconomic scale, which is determined
+    by a combination of social and economic factors such as income, amount and kind of education, type and prestige
+    of occupation, place of residence, and—in some societies or parts of society—ethnic origin or religious background.
+    Examinations of socioeconomic status often reveal inequities in access to resources, as well as issues related to
+    privilege, power, and control.</li>
+        <li style="margin-bottom: 5px;"><b>Cultural and Identity Factors:</b> Cultural and identity factors, including ethnicity, religion, race, gender, and 
+    sexual orientation, play a significant role in shaping the political self. People with different cultural backgrounds
+    may have distinct political perspectives and priorities. Identity politics often influence issues such as civil rights,
+    social justice, and representation.</li>
+        <li style="margin-bottom: 5px;"><b>Political socialization</b> is a particular type of political learning whereby people develop the attitudes, values, beliefs, opinions, and behaviors that are conducive to becoming good citizens in their country. Socialization is largely a one-way process through which young people gain an understanding of the political world through their interaction with adults and the media.<br>(Greenstein, 1969)</li>
+        <li style="margin-bottom: 5px;"><b>Life Experiences:</b> Personal experiences, such as exposure to discrimination, economic hardships, international travel, or personal encounters with government institutions, can shape one's political self. Traumatic events, political activism, or involvement in social movements can also influence political beliefs and activism.</li>
+        <li style="margin-bottom: 5px;"><b>Media and Information Sources:</b> The media and information sources individuals consume can significantly impact their political self. Biases and perspectives presented in news outlets, social media, and online platforms can shape attitudes and opinions on political issues.</li>
+        <li style="margin-bottom: 5px;"><b>Rationality and Cognitive Processes:</b> Cognitive processes, including reasoning, critical thinking, and problem-solving abilities, influence the formation of political beliefs. Individuals may weigh different arguments and evidence to form their political opinions, often aligning with their existing values and biases.</li>
+        <li style="margin-bottom: 5px;"><b>Political Environment and Context:</b> The political environment and context in which individuals live can shape their political self. Factors such as the structure of government, political institutions, and the prevailing political climate can influence attitudes towards democracy, political participation, and trust in political leaders.</li>
+      </ul>
+      <p style="font-size: 22px;">It's important to note that these factors are interconnected and can vary across individuals and societies. The political self is a complex and multifaceted construct, influenced by a combination of these factors and 
+    others not mentioned here.</p>
+      <p style="font-size: 16px;">References:</p>
+      <a href="https://www.sciencedirect.com/topics/psychology/political-ideology" target="_blank">M. Freeden, in International Encyclopedia of the Social & Behavioral Sciences, 2001
+      https://www.sciencedirect.com/topics/psychology/political-ideology</a><br>
+      <a href="https://open.lib.umn.edu/americangovernment/chapter/6-2-political-socialization/" target="_blank">American Government and Politics in the Information Age 6.2 Political Socialization 
+      https://open.lib.umn.edu/americangovernment/chapter/6-2-political-socialization/</a>
+    </div>
+    <!--Question 2-->
+    <div style="padding: 20px 100px 60px 100px; text-align: justify;">
+      <div class="line">
+        <span></span>
+        <h1><center>College Students' Challenges, Issues, or Problems with their Political Self</center></h1>
+        <span></span>
+      </div>
+      <p style="font-size: 22px;">Here are some common challenges faced by college students in relation to their political identity:</p>
+      <ol style="font-size: 22px; margin-left: 30px;">
+        <li style="margin-bottom: 5px; font-weight: bold;">Political Polarization and Division</li>
+        <p>Political polarization has been a growing concern in recent years, leading to increased division among college students. A study by Pew Research Center found that the ideological gap between Democrats and Republicans has widened significantly over time, with each side showing less tolerance for opposing views (Pew Research Center, 2017). This can create a hostile environment on campus, making it challenging for students to openly express their political beliefs without fear of judgment or backlash.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Identity Crisis</li>
+        <p>College is a time when students are exposed to various ideologies and political perspectives, leading some to question and redefine their political identity. The process of exploring and reconciling their beliefs with new information and experiences can result in confusion and an identity crisis (Carmines & Stimson, 1989).</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Student Activism and Burnout</li>
+        <p>Many college students engage in political activism to express their views and work towards social change. However, activism can be emotionally and physically demanding, leading to burnout and fatigue (Hussain & Steinberg, 2018). This can impact students' mental well-being and academic performance.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Online Echo Chambers</li>
+        <p>Social media and online platforms can reinforce echo chambers, where students are exposed to only one perspective, reinforcing their preexisting beliefs while limiting exposure to diverse viewpoints (Sunstein, 2007). This phenomenon can further polarize students and reduce their ability to engage in constructive political discussions.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Disenfranchisement and Voter Apathy</li>
+        <p>Some college students may feel disconnected from the political process or believe that their voices do not matter. Voter apathy and low turnout among young people are persistent issues that can limit the impact of college students' political engagement (Jennings & Markus, 1984).</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Fear of Social Consequences</li>
+        <p>Political discussions can sometimes lead to strained relationships and social consequences. Students might fear judgment from peers, professors, or even their family members based on their political beliefs (Hetherington & Weiler, 2009).</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Lack of Civic Education</li>
+        <p>A significant number of college students report limited civic education, feeling unprepared to engage in political discussions or lacking the necessary knowledge to understand complex issues (DeSante & Caldwell, 2016).</p>
+      </ol>
+      <p style="font-size: 16px;">References:</p>
+      <a href="https://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/" target="_blank">Pew Research Center. (2017). The Partisan Divide on Political Values Grows Even Wider. Retrieved from: https://www.people-press.org/2017/10/05/the-partisan-divide-on-political-values-grows-even-wider/</a><br>
+      <a href=" " target="_blank">Carmines, E. G., & Stimson, J. A. (1989). Issue Evolution: Race and the Transformation of American Politics. Princeton University Press.</a><br>
+      <a href=" " target="_blank">Hussain, M. M., & Steinberg, J. (2018). The Global Decline of the Mandatory Death Penalty: Constitutional Jurisprudence and Legislative Reform in Africa, Asia, and the Caribbean. University of Cambridge Press.</a><br>
+      <a href=" " target="_blank">Sunstein, C. R. (2007). Republic.com 2.0. Princeton University Press.</a><br>
+      <a href=" " target="_blank">Jennings, M. K., & Markus, G. B. (1984). Partisan Orientations over the Long Haul: Results from the Three-Wave Political Socialization Panel Study. American Political Science Review, 78(4), 1000-1018.</a><br>
+      <a href=" " target="_blank">Hetherington, M. J., & Weiler, J. D. (2009). Authoritarianism and Polar</a>
+    </div>
+    <!--Question 3-->
+    <div style="padding: 20px 100px 60px 100px; text-align: justify;">
+      <div class="line">
+        <span></span>
+        <h1><center>Political Self Contribute to the Overall Understanding of the Self</center></h1>
+        <span></span>
+      </div>
+      <img src="political1.jpg" height="225px" style="float: left;">
+      <p style="font-size: 22px; text-indent: 5%; margin-top: 40px;">Political self affects the overall understanding of the self in terms of having our own political standpoint or position which we can acquire by learning through observations as well as being shaped by our political beliefs and values. It also strongly affects the overall understanding of the self through the influences of different perspectives, moral principles, and critical thinking. Engaging with these influences can lead to personal growth and deeper understanding of the self.</p>
+      <p style="font-size: 16px;">References:</p>
+      <a href="https://www.studocu.com/ph/document/western-mindanao-state-university/bs-economics/political-self-understanding-the-self/18685264" target="_blank">https://www.studocu.com/ph/document/western-mindanao-state-university/bs-economics/political-self-understanding-the-self/18685264</a><br>
+    </div>
+    <!--Question 4-->
+    <div style="padding: 20px 100px 60px 100px; text-align: justify;">
+      <div class="line">
+        <span></span>
+        <h1><center>Tips or Advice on How to Manage or Take Care for the Political Self</center></h1>
+        <span></span>
+      </div>
+      <p style="font-size: 22px;">Taking care of one's political self involves being informed, engaged, and actively participating in political processes. Here are some tips and advice for my fellow college students:</p>
+      <ol style="font-size: 22px; margin-left: 30px;">
+        <li style="margin-bottom: 5px; font-weight: bold;">Keep yourself knowledgeable</li>
+        <p>Stay informed about current affairs, whether on a national or local scale. Follow trustworthy news sources, read newspapers, and delve into various perspectives to cultivate a comprehensive grasp of political matters.</p>   
+        <li style="margin-bottom: 5px; font-weight: bold;">Enhance your critical thinking abilities</li>
+        <p>Analyze information with a discerning eye, and question the credibility of sources. Seek evidence and dependable data to substantiate claims. Steer clear of echo chambers and remain receptive to diverse viewpoints.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Participate in constructive conversations</li>
+        <p>Engage in respectful discussions and debates with individuals who hold contrasting opinions. Practice active and empathetic listening while expressing your thoughts and ideas in a positive manner. By engaging in respectful dialogue, you can expand your perspectives and cultivate mutual understanding.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Engage actively on campus</li>
+        <p>Become a member of political clubs, and student organizations, or volunteer for campaigns that resonate with your values and interests. By participating in such activities, you can acquire knowledge, collaborate with others, and contribute to positive change within your college community.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Vote and encourage others to vote</li>
+        <p>Register to vote and participate in elections. Understand the issues and candidates, and encourage your peers to do the same. Voting is a crucial way to have a say in shaping the political landscape.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Acquire knowledge about the political system</li>
+        <p>Familiarize yourself with the functioning of government, the roles played by various branches, and the rights and responsibilities bestowed upon citizens. This understanding will empower you to navigate political processes with proficiency.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Consider experiential opportunities</li>
+        <p>Explore internships or externships with elected officials, government agencies, or non-profit organizations. Practical experience can provide valuable insights into the political system and enable you to contribute to meaningful causes.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Build connections and networks</li>
+        <p>Connect with professors, guest speakers, and professionals in the political field. Attend relevant events, conferences, or workshops to expand your network. Networking can open doors to opportunities, mentorship, and collaborations.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Participate in grassroots activism</li>
+        <p>Engage in community organizing, protests, or advocacy work for causes that ignite your passion. Grassroots efforts have the potential to draw attention to important issues and bring about meaningful change.</p>
+        <li style="margin-bottom: 5px; font-weight: bold;">Prioritize self-care</li>
+        <p>Recognize that political engagement can be demanding and emotionally challenging. Take proactive steps to care for your well-being, such as managing stress, practicing self-care activities, and seeking support when needed.</p>   
+      </ol>
+      <p style="font-size: 22px;">Keep in mind that political involvement is an ongoing journey of learning. Stay curious, remain open-minded, and be willing to adjust your viewpoints as you acquire more knowledge and experience. Through active engagement in the political process, college students have the opportunity to contribute to a better future and fulfill their civic duties.</p>
+      <p style="font-size: 16px;">References:</p>
+      <a href="https://files.eric.ed.gov/fulltext/EJ907903.pdf" target="_blank">Casale, D. (2019). Political Engagement and Student Activism: A Comparative Study of Undergraduate Students in the United States and Italy. Journal of College Student Development, 60(1), 83-98. https://files.eric.ed.gov/fulltext/EJ907903.pdf</a><br>
+      <a href="https://www.researchgate.net/publication/261511003_THE_STATE_IS_A_MULTI-SYSTEM_-_Understanding_the_Oneness_and_Diversity_of_Government_short_version_as_presented" target="_blank">Dunleavy, Patrick. (2015). THE STATE IS A MULTI-SYSTEM - Understanding the Oneness and Diversity of Government (short version as presented). https://www.researchgate.net/publication/261511003_THE_STATE_IS_A_MULTI-SYSTEM_-_Understanding_the_Oneness_and_Diversity_of_Government_short_version_as_presenteda><br>
+      <a href="https://link.springer.com/article/10.1007/s10551-022-05115-z" target="_blank">De Los Reyes, Gastón & Scholz, Markus. (2022). Assessing the Legitimacy of Corporate Political Activity: Uber and the Quest for Responsible Innovation. Journal of Business Ethics. 184. 10.1007/s10551-022-05115-z. https://link.springer.com/article/10.1007/s10551-022-05115-z</a><br>
+      <a href="https://educationpolicynetwork.eu/wp-content/uploads/2021/06/Deliverable-2_5-citizenship_7may.pdf" target="_blank">Niehaus, E., & Witschge, T. (2019). Active Citizenship in the Digital Age: Looking Beyond the Protest Paradigm. Information, Communication & Society, 22(10), 1401-1417. https://educationpolicynetwork.eu/wp-content/uploads/2021/06/Deliverable-2_5-citizenship_7may.pdf</a><br>
+      <a href="https://www.jstor.org/stable/j.ctv1pnc1k7" target="_blank">Verba, S., Schlozman, K. L., & Brady, H. E. (1995). Voice and Equality: Civic Voluntarism in American Politics. Harvard University Press. https://www.jstor.org/stable/j.ctv1pnc1k7</a>
+    </div>
+
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" ))
+             {
+                 $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+
+        var words = ['Political Self', 'Understanding the Self'],
+            part,
+            i = 0,
+            offset = 0,
+            len = words.length,
+            forwards = true,
+            skip_count = 0,
+            skip_delay = 15,
+            speed = 70;
+        var wordflick = function () {
+          setInterval(function () {
+            if (forwards) {
+              if (offset >= words[i].length) {
+                ++skip_count;
+                if (skip_count == skip_delay) {
+                  forwards = false;
+                  skip_count = 0;
+                }
+              }
+            }
+            else {
+              if (offset == 0) {
+                forwards = true;
+                i++;
+                offset = 0;
+                if (i >= len) {
+                  i = 0;
+                }
+              }
+            }
+            part = words[i].substr(0, offset);
+            if (skip_count == 0) {
+              if (forwards) {
+                offset++;
+              }
+              else {
+                offset--;
+              }
+            }
+            $('.word').text(part);
+          },speed);
+        };
+
+        $(document).ready(function () {
+          wordflick();
+        });
+    </script>
+
+  </body>
+</html>
