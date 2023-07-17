@@ -258,3 +258,89 @@
     margin-top: 20px;
 }
 
+
+
+.members{
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: 30vh;
+    margin-left: 5vw;
+    width: 90vw;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+
+.members-box {
+
+    border: solid 1px black;
+    width: 32%;
+    height: 10vh;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    animation: scale-in 1s ease-out; /* Animation for pop-up effect */
+    transition: transform 0.3s ease-out; /* Transition for smooth scaling */
+    margin: 5px;
+    
+    display: flex;
+    align-items: center;
+    margin: 5px;
+
+    
+}
+
+.members-box p{
+    font-size: 15px;
+}
+
+.img-circle {
+    height: 7vh;
+    width: 7vh;
+    border: 2px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.members-box p {
+    flex-grow: 1; 
+}
+
+.members-box:hover {
+    transform: scale(1.05); /* Scale up the div on hover */
+    background-color: rgba(166,191,204,255);
+}
+
+.rows{
+    width: 60vw;
+}
+.first-row{
+  
+    width: 60vw;
+    display: flex;
+    height: 14vh;
+    padding: 5px;
+}
+
+.second-row{
+    
+    width: 60vw;
+    display: flex;
+    height: 14vh;
+    padding: 5px;
+}
