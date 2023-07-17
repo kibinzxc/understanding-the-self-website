@@ -30,6 +30,10 @@
     }
 }
 
+.contents{
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fade-in 1s ease-in forwards; /* Animation for fade-in effect */
+}
 .banner h1 {
     margin: 0;
     padding: 0;
