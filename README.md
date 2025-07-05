@@ -1,8 +1,11 @@
-# BSIT-2C Understanding The Self Website
+# 🌐 BSIT-2C Understanding The Self Website
 
-In compliance to UNDERSTANDING THE SELF (GNED 08)
+This project was developed in compliance with the course **UNDERSTANDING THE SELF (GNED 08)**. It presents insights and reflections related to the subject, using a simple and well-structured web design.
 
-## Co-Authors/Programmers
+The website features personal content, interactive elements, and modern responsive design using HTML5, CSS3, Bootstrap 5, and JavaScript.
+
+## 👨‍💻 Co-Authors / Programmers
+
 - [Kevin Daniel Almirante](https://github.com/pheyth15)
 - [Mark Anthony Basmayor](https://github.com/mrknthny21)
 - [Mike Leanard Cabacaba](https://github.com/mike-CVSU)
@@ -10,19 +13,25 @@ In compliance to UNDERSTANDING THE SELF (GNED 08)
 - [Jubert Nantes](https://github.com/Nantes0022)
 - [Christopher & Christian Penticostes](https://github.com/Christian-Penticostes)
 
-### Languages Used
-- HTML5
-- BOOTSTRAP 5
-- CSS3
-- JAVASCRIPT
+## 🛠️ Technologies Used
 
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- JavaScript
 
-To access the website, kindly open:
+## 📂 How to Access
+
+To open the website locally, launch:
+
 `index.html`
 
-You can also access the Published website:
-`https://2c-uts.vercel.app`
+## 🔗 Live Demo
 
-or
+You can access the published website here:  
+➡️ [https://2c-uts.vercel.app](https://2c-uts.vercel.app)
 
-[Click Me](https://2c-uts.vercel.app)
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE)
