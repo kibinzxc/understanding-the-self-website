@@ -31,7 +31,3 @@ To open the website locally, launch:
 You can access the published website here:  
 ➡️ [https://2c-uts.vercel.app](https://2c-uts.vercel.app)
 
-
-## 📄 License
-
-This project is licensed under the [MIT License](./LICENSE)
